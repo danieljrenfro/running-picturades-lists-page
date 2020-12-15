@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Login Page Wireframe</title>
+</head>
+<body>
+  <header>
+    <h1>Running Picturades</h1>
+    <nav class="nav">
+      <ul>
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/rules">Rules</a></li>
+        <li class="nav-item"><a href="/login">Login</a></li>
+        <li class="nav-item"><a href="/profile">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Lists</h2>
+    <form action="GET" class="lists-filters">
+      <div>
+        <label for="search-by-title">Search:</label>
+        <input type="text" name="search-by-title" id="search-by-title" placeholder="List Title"/>
+      </div>
+      <div>
+        <label for="searby-by-user">Search:</label>
+        <input type="text" name="search-by-user" id="search-by-user" placeholder="List Creator"/>
+      </div>
+      <div>
+        <label for="game-type">Game Type</label>
+        <select name="game-type" id="game-type">
+          <option value="">--Select--</option>
+          <option value="pictionary">Pictionary</option>
+          <option value="charades">Charades</option>
+        </select>
+      </div>
+      <div>
+        <button type="button">Reset</button>
+        <button type="submit">Search</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>Running Picturades</p>
+  </footer>
+</body>
+</html>

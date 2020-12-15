@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: darkgrey;
+}
+
+h1 {
+  padding: 10px 0px 10px 0px;
+  margin: 0;
+}
+
+h2 {
+  margin: 10px 0px 10px 0px;
+}
+
+main {
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 10px auto 10px auto;
+}
+
+footer > p {
+  width: 90vw;
+  margin: auto;
+}
+
+header > nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 10px 0px;
+  margin: 0;
+}
+
+header > nav > ul > li {
+  margin-right: 10px;
+}
+
+header > nav > ul > li:last-child {
+  margin-right: 0px;
+}
+
+form > label {
+  padding: 4px 0px 4px 0px;
+}
+
+form > input {
+  padding: 4px;
+  margin-right: 10px;
+}
+
+form > input:last-of-type {
+  margin-bottom: 8px;
+  margin-right: 0px;
+}
+
+form > div > label, input, select {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.lists-filters > div > input, select {
+  margin-bottom: 7px;
+}
+
+
+@media all and (min-width: 800px) {
+
+  .lists-filters > div > label, input, select {
+    width: 8em;
+  }
+
+  .lists-filters {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .lists-filters > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .lists-filters > div > label {
+    width: fit-content;
+    margin-right: 5px;
+  }
+
+  .lists-filters > div > input, select {
+    margin-bottom: 0px;
+    margin-right: 5px;
+  }
+
+  .lists-filters > div > button:first-of-type {
+    margin-right: 5px;
+  }
+
+}
