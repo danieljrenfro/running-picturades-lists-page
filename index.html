@@ -22,28 +22,92 @@
 
   <main>
     <h2>Lists</h2>
-    <form action="GET" class="lists-filters">
-      <div>
-        <label for="search-by-title">Search:</label>
-        <input type="text" name="search-by-title" id="search-by-title" placeholder="List Title"/>
+    <section>
+      <form action="GET" class="filter-form">
+        <div>
+          <label for="search-by-title">Search:</label>
+          <input type="text" name="search-by-title" id="search-by-title" placeholder="List Title"/>
+        </div>
+        <div>
+          <label for="searby-by-user">Search:</label>
+          <input type="text" name="search-by-user" id="search-by-user" placeholder="List Creator"/>
+        </div>
+        <div>
+          <label for="game-type">Game Type</label>
+          <select name="game-type" id="game-type">
+            <option value="">--Select--</option>
+            <option value="pictionary">Pictionary</option>
+            <option value="charades">Charades</option>
+          </select>
+        </div>
+        <div>
+          <button type="button">Reset</button>
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="lists-display">
+      <div class="list">
+        <div>
+          <h3 class="list-title">Dog Breeds</h3>
+          <p class="list-creator">Daniel Renfro</p>
+        </div>
+        <p class="list-type">Pictionary</p>
+        <div class="list-buttons">
+          <button type="button">View</button>
+          <button type="submit">Start</button>
+        </div>
       </div>
-      <div>
-        <label for="searby-by-user">Search:</label>
-        <input type="text" name="search-by-user" id="search-by-user" placeholder="List Creator"/>
+
+      <div class="list">
+        <div class="list-header">
+          <h3 class="list-title">Disney</h3>
+          <p class="list-creator">Laurie Renfro</p>
+        </div>
+        <p class="list-type">Pictionary</p>
+        <div class="list-buttons">
+          <button type="button">View</button>
+          <button type="submit">Start</button>
+        </div>
       </div>
-      <div>
-        <label for="game-type">Game Type</label>
-        <select name="game-type" id="game-type">
-          <option value="">--Select--</option>
-          <option value="pictionary">Pictionary</option>
-          <option value="charades">Charades</option>
-        </select>
+
+      <div class="list">
+        <div>
+          <h3 class="list-title">Sports</h3>
+          <p class="list-creator">Daniel Renfro</p>
+        </div>
+        <p class="list-type">Charades</p>
+        <div class="list-buttons">
+          <button type="button">View</button>
+          <button type="submit">Start</button>
+        </div>
       </div>
-      <div>
-        <button type="button">Reset</button>
-        <button type="submit">Search</button>
+
+      <div class="list">
+        <div>
+          <h3 class="list-title">Travel</h3>
+          <p class="list-creator">Laurie Renfro</p>
+        </div>
+        <p class="list-type">Charades</p>
+        <div class="list-buttons">
+          <button type="button">View</button>
+          <button type="submit">Start</button>
+        </div>
       </div>
-    </form>
+
+      <div class="list">
+        <div>
+          <h3 class="list-title">List Title</h3>
+          <p class="list-creator">List Creator</p>
+        </div>
+        <p class="list-type">Pictionary</p>
+        <div class="list-buttons">
+          <button type="button">View</button>
+          <button type="submit">Start</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
